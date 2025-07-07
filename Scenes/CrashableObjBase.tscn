@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cykafgh8xp4ho"]
+
+[ext_resource type="Script" uid="uid://bt1w753sgxmjw" path="res://Scripts/Crashable.gd" id="1_vnffj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_a202f"]
+size = Vector3(20, 20, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a202f"]
+albedo_color = Color(0.941015, 0.665761, 1, 1)
+
+[node name="Ground" type="CSGMesh3D"]
+use_collision = true
+mesh = SubResource("BoxMesh_a202f")
+material = SubResource("StandardMaterial3D_a202f")
+script = ExtResource("1_vnffj")
+excavation_radius = 5.0
+ray_cast_max_distance = 5.0

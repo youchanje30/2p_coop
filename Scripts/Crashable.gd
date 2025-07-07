@@ -1,0 +1,2 @@
+extends CSGMesh3D
+class_name Crashable
